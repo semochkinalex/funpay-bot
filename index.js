@@ -32,4 +32,22 @@ setInterval(function () {
         const submit = document.querySelector('.js-lot-raise-ex');
         submit.click();
     }, 1000);
-}, 1000)     
+}, 1000)   
+
+// Добавить лот
+
+const addButton = document.querySelector('.js-lot-offer-edit');
+addButton.click();
+setTimeout(() => {
+    const summaryText = '⭐Автоматическое поднятие предложений для Funpay⭐';
+    const descriptionText = "Text";
+    const price = 30;
+    const summaryInput = document.querySelector("input[name='fields[summary]'");
+    summaryInput.value = summaryText;
+    const descriptionInput = document.querySelector("textarea[name='fields[desc]'");
+    descriptionInput.value = descriptionText;
+    const priceInput = document.querySelector("input[name='price']");
+    priceInput.value = price;
+    const amountInput = document.querySelector("input[name='amount']");
+    amountInput.value = 999;
+}, 1000)
