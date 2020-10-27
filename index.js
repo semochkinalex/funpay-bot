@@ -40,7 +40,7 @@ const addButton = document.querySelector('.js-lot-offer-edit');
 addButton.click();
 setTimeout(() => {
     const summaryText = '⭐Автоматическое поднятие предложений для Funpay⭐';
-    const descriptionText = "Text";
+    const descriptionText = "Любой текст";
     const price = 30;
     const summaryInput = document.querySelector("input[name='fields[summary]'");
     summaryInput.value = summaryText;
