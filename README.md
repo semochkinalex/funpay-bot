@@ -19,26 +19,18 @@
 В открытую консоль, сделанную из предыдущего пункта, впишите данный код.
 ```
 setInterval(function () {
-    const openForm = () => {
-        const raiseButton = document.querySelector('.js-lot-raise');    
-        raiseButton.click();
-    };
-    openForm();
-    const checkEverything = () => {
-        const checkboxes = document.querySelectorAll("input[type='checkbox']");
-        checkboxes.forEach((item) => {
-            if(!item.checked){
-                item.click();
-            }
-        })
-    };
-    openForm();
-    setTimeout(function () {
-        checkEverything();
-        const submit = document.querySelector('.js-lot-raise-ex');
-        submit.click();
-    }, 1000);
-}, 1000)     
+  document.querySelector('.js-lot-raise').click();
+  setTimeout(function () {
+    document.querySelectorAll("input[type='checkbox']")
+      .forEach((ngweadasd) => {
+        if (!ngweadasd.checked) {
+          ngweadasd.click();
+        }
+      })
+    document.querySelector('.js-lot-raise-ex')
+      .click();
+  }, 1000);
+}, 1000) 
 
 ```
 Каждую секунду, скрипт будет пытаться поднять лоты. Консоль и эту страницу закрывать __нельзя__, иначе скрипт перестанет работать.
